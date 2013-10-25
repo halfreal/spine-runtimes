@@ -76,9 +76,9 @@ public class SkeletonRenderer {
 					batch.setBlendFunction(srcFunc, GL10.GL_ONE_MINUS_SRC_ALPHA);
 				}
 			}
-
-			batch.draw(texture, vertices, 0, vertices.length, triangles, 0,
-					triangles.length);
+			// FIXME
+			// batch.draw(texture, vertices, 0, vertices.length, triangles, 0,
+			// triangles.length);
 		}
 	}
 
