@@ -350,8 +350,7 @@ public class SkeletonJson {
 		SkeletonData skeletonData = new SkeletonData();
 		skeletonData.name = file.nameWithoutExtension();
 
-		JsonValue root = (JsonValue) new JsonReader().parse(file);
-
+		JsonValue root = new JsonReader().parse(file);
 		// Bones.
 		for (JsonValue boneMap = root.getChild("bones"); boneMap != null; boneMap = boneMap
 				.next()) {
